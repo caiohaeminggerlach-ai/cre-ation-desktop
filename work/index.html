@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Our work with The Grey Men's Skincare — a cre-ation case study.">
+  <link rel="preload" as="image" href="../assets/work/00-case-intro.webp" type="image/webp" fetchpriority="high">
+  <title>Our work — cre-ation</title>
+  <style>
+    :root{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#000;scroll-behavior:smooth}
+    *{box-sizing:border-box}body{margin:0}
+    .site-header{position:fixed;inset:0 0 auto;z-index:20;height:clamp(48px,6.5svh,64px);padding:0 4%;display:flex;align-items:center;justify-content:space-between;background:#fff;color:#000}
+    .site-header.dark{background:#000;color:#fff}
+    .site-header.dark .logo img{filter:invert(1)}
+    .work-slide.dark{background:#000}
+    #work .artwork::before,#work .artwork::after{display:none}
+    .site-header .logo{color:inherit;text-decoration:none;display:flex;align-items:center;flex:none;transition:opacity .2s ease}
+    .site-header .logo img{display:block;width:clamp(175px,15vw,230px);height:auto}
+    .site-header nav{display:flex;align-items:center;gap:clamp(1.8rem,5vw,6rem)}
+    .site-header nav a{position:relative;color:inherit;text-decoration:none;font-size:clamp(.85rem,1.05vw,1rem);font-weight:500;letter-spacing:.015em;padding:.55em 0}
+    .site-header nav a::after{content:"";position:absolute;left:0;right:0;bottom:.25em;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .24s ease}
+    .site-header nav a:hover::after,.site-header nav a:focus-visible::after{transform:scaleX(1)}
+    .site-header .logo:hover{opacity:.68}
+    .site-header a:focus-visible,.index-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+    .work-slide{position:relative;width:100%;height:min(100vh,56.25vw);height:min(100svh,56.25vw);overflow:hidden;background:#fff;display:grid;place-items:center}
+    .artwork{position:relative;width:min(100vw,177.7778dvh);aspect-ratio:16/9;max-height:100%}
+    .artwork picture{display:block;width:100%;height:100%}
+    .artwork img{display:block;width:100%;height:100%;object-fit:contain;image-rendering:auto}
+    .artwork::before,.artwork::after{content:"";position:absolute;top:0;height:8%;z-index:1;pointer-events:none;background:#fefefe}
+    .artwork::before{left:0;width:16%}.artwork::after{right:0;width:40%}
+    .routine .artwork::after{width:14%;background:linear-gradient(115deg,#515151,#353535)}
+    .acquisition .artwork::after{width:14%}
+    .index-link{position:absolute;left:3.2%;width:58%;height:6.35%;z-index:2;display:block}
+    .index-link:nth-of-type(1){top:45.5%}.index-link:nth-of-type(2){top:52%}.index-link:nth-of-type(3){top:58.5%}
+    .index-link:nth-of-type(4){top:65%}.index-link:nth-of-type(5){top:71.5%}.index-link:nth-of-type(6){top:78%}
+    .index-link{transition:background .2s ease}
+    .index-link:hover,.index-link:focus-visible{background:rgba(0,0,0,.055)}
+    .rail{position:fixed;right:7px;top:50%;transform:translateY(-50%);display:grid;gap:1px;z-index:5;mix-blend-mode:difference}
+    .rail a{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;outline-offset:-2px}
+    .rail a::before{content:"";display:block;width:7px;height:7px;border:1px solid #fff;border-radius:50%;transition:transform .2s ease,background .2s ease}
+    .rail a.active::before,.rail a:hover::before{background:#fff;transform:scale(1.4)}
+    .rail a:focus-visible{outline:1px solid #fff}
+    .contact-bar{min-height:max(150px,calc(100svh - 56.25vw));background:#fff;color:#000;border-top:1px solid #000;display:flex}
+    .contact-bar a{display:flex;align-items:center;width:100%;padding:1.2rem 4% 1.35rem;color:inherit;text-decoration:none;transition:background .2s ease}
+    .contact-bar a:hover{background:#f0f0f0}
+    .contact-bar a:focus-visible{outline:3px solid currentColor;outline-offset:-7px}
+    .contact-bar strong{display:block;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(3rem,7vw,8rem);line-height:.9;letter-spacing:-.035em;font-weight:900;white-space:nowrap}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media (max-width:700px){.site-header{position:sticky;height:52px;padding:0 5%}.site-header .logo img{width:135px}.site-header nav{gap:.5rem}.site-header nav a{font-size:.62rem}.rail{right:1px;gap:0}.rail a{width:18px;height:18px}.rail a::before{width:5px;height:5px}.contact-bar{min-height:110px}.contact-bar a{padding:1rem 5%}.contact-bar strong{font-size:12vw}}
+    @media (prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.site-header .logo,.site-header nav a::after,.index-link,.rail a::before,.contact-bar a{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header dark">
+    <a class="logo" href="/cre-ation-desktop/#home" aria-label="cre-ation home"><img src="/cre-ation-desktop/assets/cre-ation-logo.png" alt="" width="1937" height="379"></a>
+    <nav aria-label="Main navigation"><a href="#work">WORK</a><a href="/cre-ation-desktop/how-we-work/">HOW WE WORK</a><a href="/cre-ation-desktop/team/">THE TEAM</a><a href="/cre-ation-desktop/contact/">CONTACT</a></nav>
+  </header>
+  <main aria-label="The Grey Men's Skincare case study">
+    <section class="work-slide dark" id="work" aria-labelledby="heading-work">
+      <h1 id="heading-work" class="sr-only">The Grey Men's Skincare: How we doubled their revenue in 4 months.</h1>
+      <div class="artwork"><img src="../assets/work/00-case-intro.webp" width="1672" height="941" alt="The Grey Men's Skincare. How we doubled their revenue in 4 months. Product, experience, communication. A small sphere grows into a larger sphere." fetchpriority="high"></div>
+    </section>
+    <section class="work-slide" id="work-index" aria-labelledby="heading-index">
+      <h2 id="heading-index" class="sr-only">How we did it</h2>
+      <div class="artwork">
+        <picture><source media="(min-width: 701px)" srcset="../assets/work/00-case-index.4k.webp" type="image/webp"><img src="../assets/work/00-case-index.jpg" srcset="../assets/work/00-case-index.jpg 1536w, ../assets/work/00-case-index.4k.webp 3840w" sizes="(max-aspect-ratio: 16/9) 100vw, 177.7778dvh" width="1536" height="864" alt="The Grey Men's Skincare case study. Double revenue in four months. Index: Brand Ambassadors, Talk to Customers, Remove Products, Refine Website and UX, Create The Grey Routine, Acquisition Funnel." loading="lazy"></picture>
+        <a class="index-link" href="#brand-ambassadors" aria-label="01 Brand ambassadors"></a>
+        <a class="index-link" href="#talk-customers" aria-label="02 Talk to customers"></a>
+        <a class="index-link" href="#remove-products" aria-label="03 Remove products"></a>
+        <a class="index-link" href="#refine-website" aria-label="04 Refine website and UX"></a>
+        <a class="index-link" href="#grey-routine" aria-label="05 The Grey Routine"></a>
+        <a class="index-link" href="#customer-acquisition" aria-label="06 Acquisition funnel"></a>
+      </div>
+    </section>
+    <section class="work-slide" id="brand-ambassadors" aria-labelledby="heading-brand">
+      <h2 id="heading-brand" class="sr-only">01 Brand ambassadors</h2>
+      <div class="artwork"><picture><source media="(min-width: 701px)" srcset="../assets/work/01-brand-ambassadors.4k.webp" type="image/webp"><img src="../assets/work/01-brand-ambassadors.jpg" srcset="../assets/work/01-brand-ambassadors.jpg 1536w, ../assets/work/01-brand-ambassadors.4k.webp 3840w" sizes="(max-aspect-ratio: 16/9) 100vw, 177.7778dvh" width="1536" height="864" alt="Brand ambassadors. Select five to ten people who genuinely love The Grey's products, have engaged audiences, and can start meaningful weekly conversations about skincare." loading="lazy"></picture></div>
+    </section>
+    <section class="work-slide" id="talk-customers" aria-labelledby="heading-customers">
+      <h2 id="heading-customers" class="sr-only">02 Talk to customers</h2>
+      <div class="artwork"><picture><source media="(min-width: 701px)" srcset="../assets/work/02-talk-customers.4k.webp" type="image/webp"><img src="../assets/work/02-talk-customers.jpg" srcset="../assets/work/02-talk-customers.jpg 1536w, ../assets/work/02-talk-customers.4k.webp 3840w" sizes="(max-aspect-ratio: 16/9) 100vw, 177.7778dvh" width="1536" height="864" alt="Talk to customers. Use weekly conversations, interviews and questions to learn about skin struggles, goals, expectations and experience with The Grey." loading="lazy"></picture></div>
+    </section>
+    <section class="work-slide" id="remove-products" aria-labelledby="heading-products">
+      <h2 id="heading-products" class="sr-only">03 Remove products</h2>
+      <div class="artwork"><picture><source media="(min-width: 701px)" srcset="../assets/work/03-remove-products.4k.webp" type="image/webp"><img src="../assets/work/03-remove-products.jpg" srcset="../assets/work/03-remove-products.jpg 1536w, ../assets/work/03-remove-products.4k.webp 3840w" sizes="(max-aspect-ratio: 16/9) 100vw, 177.7778dvh" width="1536" height="864" alt="Remove products. Focus on what customers want. Five products generated most revenue over the prior 90 days." loading="lazy"></picture></div>
+    </section>
+    <section class="work-slide" id="refine-website" aria-labelledby="heading-website">
+      <h2 id="heading-website" class="sr-only">04 Refine website and UX</h2>
+      <div class="artwork"><picture><source media="(min-width: 701px)" srcset="../assets/work/04-refine-website.4k.webp" type="image/webp"><img src="../assets/work/04-refine-website.jpg" srcset="../assets/work/04-refine-website.jpg 1536w, ../assets/work/04-refine-website.4k.webp 3840w" sizes="(max-aspect-ratio: 16/9) 100vw, 177.7778dvh" width="1536" height="864" alt="Refine website and UX. Make buying effortless with clearer product benefits, concise information and a frictionless path to purchase." loading="lazy"></picture></div>
+    </section>
+    <section class="work-slide routine" id="grey-routine" aria-labelledby="heading-routine">
+      <h2 id="heading-routine" class="sr-only">05 The Grey Routine</h2>
+      <div class="artwork"><picture><source media="(min-width: 701px)" srcset="../assets/work/05-grey-routine.4k.webp" type="image/webp"><img src="../assets/work/05-grey-routine.jpg" srcset="../assets/work/05-grey-routine.jpg 1536w, ../assets/work/05-grey-routine.4k.webp 3840w" sizes="(max-aspect-ratio: 16/9) 100vw, 177.7778dvh" width="1536" height="864" alt="The Grey Routine. A simple, complete, educational and repeatable skincare system for morning, daily nourishment and evening care." loading="lazy"></picture></div>
+    </section>
+    <section class="work-slide acquisition" id="customer-acquisition" aria-labelledby="heading-acquisition">
+      <h2 id="heading-acquisition" class="sr-only">06 Customer acquisition</h2>
+      <div class="artwork"><picture><source media="(min-width: 701px)" srcset="../assets/work/06-customer-acquisition.4k.webp" type="image/webp"><img src="../assets/work/06-customer-acquisition.jpg" srcset="../assets/work/06-customer-acquisition.jpg 1536w, ../assets/work/06-customer-acquisition.4k.webp 3840w" sizes="(max-aspect-ratio: 16/9) 100vw, 177.7778dvh" width="1536" height="864" alt="Customer acquisition. Attract, convert, educate, retain and refer customers through useful content and an exceptional experience." loading="lazy"></picture></div>
+    </section>
+  </main>
+  <footer class="contact-bar" id="contact" aria-label="Let's talk">
+    <a href="/cre-ation-desktop/contact/" aria-label="Let's talk — open the contact page"><strong>LET’S TALK</strong></a>
+  </footer>
+  <nav class="rail" aria-label="Case study slide navigation">
+    <a href="#work" aria-label="Case study introduction"></a><a href="#work-index" aria-label="Case study overview"></a><a href="#brand-ambassadors" aria-label="Brand ambassadors"></a><a href="#talk-customers" aria-label="Talk to customers"></a><a href="#remove-products" aria-label="Remove products"></a><a href="#refine-website" aria-label="Refine website and UX"></a><a href="#grey-routine" aria-label="The Grey Routine"></a><a href="#customer-acquisition" aria-label="Customer acquisition"></a><a href="#contact" aria-label="Let's talk"></a>
+  </nav>
+  <script>
+    const slides=[...document.querySelectorAll('.work-slide, .contact-bar')],dots=[...document.querySelectorAll('.rail a')];
+    const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){const n=slides.indexOf(entry.target);document.querySelector('.site-header').classList.toggle('dark',entry.target.classList.contains('dark'));dots.forEach((dot,i)=>{dot.classList.toggle('active',i===n);if(i===n)dot.setAttribute('aria-current','location');else dot.removeAttribute('aria-current')})}}},{threshold:.6});
+    slides.forEach(slide=>observer.observe(slide));
+    let keyboardScrolling=false,scrollFrame=0;
+    const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+    const currentSlide=()=>{
+      if(window.scrollY>=document.documentElement.scrollHeight-window.innerHeight-4)return slides.length-1;
+      let index=0;
+      slides.forEach((slide,i)=>{if(slide.getBoundingClientRect().top<=window.innerHeight/2)index=i});
+      return index;
+    };
+    const stopKeyboardScroll=()=>{cancelAnimationFrame(scrollFrame);keyboardScrolling=false;document.documentElement.style.scrollBehavior=''};
+    const scrollToSlide=index=>{
+      const start=window.scrollY;
+      const end=Math.min(slides[index].getBoundingClientRect().top+start,document.documentElement.scrollHeight-window.innerHeight);
+      if(Math.abs(end-start)<2)return;
+      if(reducedMotion.matches){window.scrollTo({top:end,behavior:'instant'});return}
+      keyboardScrolling=true;
+      document.documentElement.style.scrollBehavior='auto';
+      const duration=Math.min(820,Math.max(330,Math.abs(end-start)/window.innerHeight*760));
+      let startTime;
+      const step=time=>{
+        if(startTime===undefined)startTime=time;
+        const progress=Math.min(1,(time-startTime)/duration);
+        const eased=progress<.5?4*progress**3:1-(-2*progress+2)**3/2;
+        window.scrollTo(0,start+(end-start)*eased);
+        if(progress<1)scrollFrame=requestAnimationFrame(step);else stopKeyboardScroll();
+      };
+      scrollFrame=requestAnimationFrame(step);
+    };
+    window.addEventListener('wheel',()=>{if(keyboardScrolling)stopKeyboardScroll()},{passive:true});
+    window.addEventListener('touchstart',()=>{if(keyboardScrolling)stopKeyboardScroll()},{passive:true});
+    document.addEventListener('keydown',event=>{
+      if(!['ArrowDown','ArrowUp','PageDown','PageUp'].includes(event.key)||event.altKey||event.ctrlKey||event.metaKey||event.target.closest('a,button,input,textarea,select,[contenteditable]'))return;
+      event.preventDefault();
+      if(event.repeat||keyboardScrolling)return;
+      const direction=event.key==='ArrowDown'||event.key==='PageDown'?1:-1;
+      scrollToSlide(Math.max(0,Math.min(slides.length-1,currentSlide()+direction)));
+    });
+  </script>
+</body>
+</html>

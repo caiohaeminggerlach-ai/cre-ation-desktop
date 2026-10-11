@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Contact cre-ation. Let's make something better.">
+  <title>Contact — cre-ation</title>
+  <style>
+    :root{font-family:Arial,Helvetica,sans-serif;color:#fff;background:#000}
+    *{box-sizing:border-box}body{margin:0}
+    .page{min-height:100vh;min-height:100dvh;max-width:1920px;margin-inline:auto;padding:clamp(2rem,3vw,3rem) 4% 2rem;display:flex;flex-direction:column}
+    header{display:flex;align-items:center;justify-content:space-between}
+    header a{color:#fff;text-decoration:none;transition:opacity .2s ease}
+    header a:hover{opacity:.7}
+    .logo{display:flex;align-items:center}
+    .logo img{display:block;width:clamp(175px,15vw,230px);height:auto;filter:invert(1)}
+    .home{font-family:"Courier New",monospace;font-size:clamp(.95rem,1.25vw,1.2rem)}
+    a:focus-visible{outline:2px solid #fff;outline-offset:6px}
+    .content{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(2rem,5.8vh,5rem) 0}
+    .eyebrow{font-family:"Courier New",monospace;font-size:clamp(.9rem,1.2vw,1.2rem);letter-spacing:.02em;margin:0 0 2rem}
+    h1{font-size:clamp(4.5rem,8vw,10rem);line-height:.9;letter-spacing:-.058em;font-weight:900;margin:0 0 4.5vh}
+    .prompt{font-family:"Courier New",monospace;font-size:clamp(1rem,1.7vw,1.65rem);line-height:1.45;margin:0 0 6vh}
+    .email{color:#fff;text-decoration:none;border-bottom:2px solid #fff;font-size:clamp(1.7rem,4.3vw,5rem);font-weight:900;letter-spacing:-.04em;line-height:1.1;overflow-wrap:anywhere;transition:color .2s ease,border-color .2s ease}
+    .email:hover{color:#cfcfcf;border-color:#cfcfcf}
+    footer{display:flex;justify-content:space-between;gap:2rem;border-top:1px solid #fff;padding-top:1.35rem;font-family:"Courier New",monospace;font-size:clamp(.78rem,1vw,1rem);line-height:1.55}
+    footer p{margin:0}footer p:last-child{text-align:right}
+    @media(max-width:700px){.page{padding:2rem 5% 1.5rem}.logo img{width:160px}.content{padding:8vh 0}.eyebrow{margin-bottom:2rem}h1{font-size:clamp(3.8rem,12vw,6rem);margin-bottom:7vh}.prompt{font-size:1rem;margin-bottom:8vh}.email{font-size:clamp(1.55rem,6.8vw,3rem)}footer{font-size:.72rem}}
+    @media(max-height:650px) and (min-width:701px){.content{padding:3vh 0}h1{font-size:clamp(3.5rem,6vw,6rem);margin-bottom:3vh}.prompt{margin-bottom:3vh}}
+    @media(prefers-reduced-motion:reduce){header a,.email{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="logo" href="/cre-ation-desktop/" aria-label="cre-ation home"><img src="/cre-ation-desktop/assets/cre-ation-logo.png" alt="" width="1937" height="379"></a>
+      <nav aria-label="Main navigation"><a class="home" href="/cre-ation-desktop/how-we-work/">[ HOW WE WORK ]</a> <a class="home" href="/cre-ation-desktop/team/">[ THE TEAM ]</a> <a class="home" href="/cre-ation-desktop/">[ HOME ]</a></nav>
+    </header>
+    <main class="content">
+      <p class="eyebrow">CONTACT / CRE-ATION</p>
+      <h1>LET'S MAKE<br>SOMETHING<br>BETTER.</h1>
+      <p class="prompt">Tell us what you're building<br>and what you want to improve.</p>
+      <a class="email" href="mailto:hello@cre-ation.io">HELLO@CRE-ATION.IO</a>
+    </main>
+    <footer>
+      <p>IDEAS PEOPLE LOVE.</p>
+      <p>PRODUCT · EXPERIENCE<br>COMMUNICATION</p>
+    </footer>
+  </div>
+</body>
+</html>
